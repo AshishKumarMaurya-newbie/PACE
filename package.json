@@ -1,0 +1,15 @@
+{
+  "name": "pace",
+  "version": "1.0.0",
+  "description": "Personal fitness and training log",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "cd backend && python -m uvicorn app.main:app --reload",
+    "test:backend": "cd backend && python -m pytest -q",
+    "test:e2e": "npm --prefix frontend run test:e2e"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
